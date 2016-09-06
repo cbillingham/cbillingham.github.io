@@ -18,6 +18,7 @@ exclude:
 
 gems:
   - jekyll-seo-tag
+  - jekyll-feed
 
 # Build settings
 highlighter: pygments

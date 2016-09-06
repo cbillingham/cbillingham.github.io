@@ -16,11 +16,65 @@ h6 {
   color: #9E9898;
 }
 
+.feature-img {
+  width: 100%;
+  height: auto;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.feature-img-left {
+  padding: 0 0 0 0;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative; 
+  z-index: 1;
+}
+
+.feature>a:hover .feature-img {
+  transform: scale(1.05, 1.05);
+}
+
+.feature-text-right {
+  text-align: right;
+}
+
+.feature-text-left {
+  text-align: left;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+.filter-btn {
+  font-size: 12px;
+  color: #9E9898;
+  padding: 15px 3px 5px 3px;
+  background-color: white;
+  margin-left: 1px;
+  margin-right: 1px;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.filter-btn.active, .filter-btn:hover {
+  border-bottom: #3973ac solid 2px;
+  color: #3973ac;
+  text-decoration: none;
+}
+
 .list-inline>li:nth-child(even) { 
   color: #766f6f;
 }
 
 .headers {
+  padding-bottom: 10px;
   color: #3973ac;
 }
 
@@ -75,6 +129,17 @@ h6 {
 .content {min-height: 70%;}
 .vbottom {margin-bottom: 0px;}
 .photo {max-height: 210px;}
+.filter-btn {
+  font-size: 15px;
+  color: #9E9898;
+  padding: 15px 13px 5px 13px;
+  background-color: white;
+  margin-left: 5px;
+  margin-right: 5px;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  transition: all .2s ease;
+}
 }
 
 @media only screen and (min-width:992px) {
@@ -95,11 +160,11 @@ ul.social-buttons li a {
   width: 37px;
   height: 37px;
   border-radius: 15%;
-  font-size: 30px;
+  font-size: 28px;
   line-height: 37px;
   outline: 0;
   color: #fff;
-  background-color: #FC645F;
+  background-color: #fc8682;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   transition: all .3s;
@@ -108,7 +173,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-  background-color: #fed136;
+  background-color: #fa3f38;
 }
 
 /*--- footer ----*/
@@ -126,4 +191,8 @@ footer .center-block h4{
 footer .footer-col {
   margin-top: 20px;
 
+}
+
+.blog-content {
+  min-height: 450px;
 }

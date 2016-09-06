@@ -1,6 +1,10 @@
 ---
 layout: default
 ---
+{% if page.layout == "post" %}
+  <div style="height:40px;">
+  </div>
+{% else %}
 <div class="container">
   <div class="row">
     <div class="text-center">
@@ -8,4 +12,5 @@ layout: default
     </div>
   </div>
 </div>
+{% endif %}
 {{content}}

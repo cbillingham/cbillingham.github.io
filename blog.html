@@ -1,29 +1,24 @@
 ---
-layout: page
+layout: blog
 title: Blog
 ---
-
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      {% for post in site.posts %}
-        {% if post.tags contains 'Post' %}
-          <div class="post-preview">
-            <a href="{{ post.url | prepend: site.baseurl }}">
-              <h3 class="post-title">            
-                {{ post.title }}
-              </h3>
-              {% if post.subtitle %}
-              <h4 class="post-subtitle">
-                {{ post.subtitle }}
-              </h4>
-              {% endif %}
-            </a>
-            <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.author }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
-          </div>
-        <hr>
+{% for post in site.posts %}
+  {% if post.tags contains 'Post' %}
+    <div class="post-preview">
+      <a href="{{ post.url | prepend: site.baseurl }}">
+        <h3 class="post-title">            
+          {{ post.title }}
+        </h3>
+        {% if post.subtitle %}
+        <h4 class="post-subtitle">
+          {{ post.subtitle }}
+        </h4>
         {% endif %}
-      {% endfor %}
+      </a>
+      <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.author }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
     </div>
-  </div>
-</div>
+    <hr>
+  {% endif %}
+{% endfor %}
+
+
