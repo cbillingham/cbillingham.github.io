@@ -2,16 +2,39 @@
 layout: page
 title: Film Projects
 custom_js:
-  - isotope.pkgd.min
+- isotope.pkgd.min
+- selector
 ---
 
 <div class="container">
   <div class="row">
-    <div class="text-center">
-        <a href type="button" class="filter-btn active" data-filter="*">ALL</a>|
-        <a href type="button" class="filter-btn" data-filter=".lighting">LIGHTING</a>|
-        <a href type="button" class="filter-btn" data-filter=".sound">SOUND DESIGN</a>|
-        <a href type="button" class="filter-btn" data-filter=".directing">DIRECTING</a>
+    <div class="text-center filter-btn-group">
+      <a href type="button" class="filter-btn active" data-filter="*">ALL</a>|
+      <a href type="button" class="filter-btn" data-filter=".lighting">LIGHTING</a>|
+      <a href type="button" class="filter-btn" data-filter=".sound">SOUND DESIGN</a>|
+      <a href type="button" class="filter-btn" data-filter=".directing">DIRECTING</a>
     </div>
   </div>
-</div>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="row grid">
+        {% for page in site.films %}
+        <div class="col-md-6 col-lg-4 col-xs-12 {{ page.categories | join: ' ' }} film-cont">
+          <div class="feature">
+            <a href="{{ page.url }}">
+              <div class="center-block feature-img-cont">
+                <img class="img feature-img" src="/images/{{ page.header-img }}">
+              </div>
+            </a>
+          </div>
+          <div class="film-info">
+            <a href="{{ page.url }}">
+              <h3 class="project-header-film">{{ page.title }}<span class="film-type">{{ page.type }}</span></h3>
+              <p class="position">{{ page.positions | join: '  |  '}}</p>
+            </a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>

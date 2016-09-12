@@ -1,0 +1,28 @@
+---
+title: Archive
+layout: blog
+---
+
+
+<section id="archive">
+  {%for post in site.posts %}
+    {% unless post.next %}
+      <div id="{{ post.date | date: '%Y' }}">
+        <h3 class="archive-header">{{ post.date | date: '%Y' }}</h3>
+        <ul class="archive">
+    {% else %}
+      {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+      {% if year != nyear %}
+          </ul>
+        </div>
+        <div id="{{ post.date | date: '%Y' }}">
+          <h3 class="archive-header">{{ post.date | date: '%Y' }}</h3>
+          <ul class="archive">
+      {% endif %}
+    {% endunless %}
+      <li><time>{{ post.date | date:"%d %B" }}</time> - <a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+  </ul>
+</div>
+</section>

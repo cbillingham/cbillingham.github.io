@@ -6,21 +6,25 @@ custom_js: isotope.pkgd.min
 
 <div class="container">
   <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <div class="row row-eq-height feature">
-        <a href="/test">
-          <div class="col-md-6">
-            <div class="feature-img-left">
-              <img class="img feature-img" src="/images/test.png">
+    <div class="col-md-10 col-md-offset-1">
+      {% for page in site.code | limit: 4 %}
+      <div class="row feature {{ page.categories | join: ' ' }}">
+        <div class="col-md-6{% cycle '', ' col-md-push-6' %}">
+          <a href="https://{{ page.dest-url }}">
+            <div class="center-block feature-img-cont">
+              <img class="img feature-img" src="/images/{{ page.header-img }}">
             </div>
-          </div>
-          <div class="col-md-6 feature-text-right">
-            <h2>Grapevine</h2>
-            <p>This is some text</p>
-          </div>
-        </a>
+          </a>
+        </div>
+        <div class="col-md-6{% cycle '', ' col-md-pull-6' %} feature-text-{% cycle 'right', 'left' %}">
+          <h2 class="project-header-code">{{ page.title }}</h2>
+          <p class="languages" style="white-space: pre-wrap;">{{ page.languages | join: '  |  '}}</pre></p>
+          {{ page.output }}
+          <p><a href="https://{{ page.dest-url }}">Read More...</a></p>
+        </div>
       </div>
       <hr>
+      {% endfor %}
     </div>
   </div>
 </div>

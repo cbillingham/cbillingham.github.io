@@ -20,6 +20,12 @@ gems:
   - jekyll-seo-tag
   - jekyll-feed
 
+collections:
+  films:
+    output: true
+  code:
+    output: false
+
 # Build settings
 highlighter: pygments
 permalink: pretty
