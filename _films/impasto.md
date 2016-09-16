@@ -25,6 +25,7 @@ custom_js:
 custom_css: 
   - owl.carousel
   - owl.theme
+sort_weight: 9
 ---
 Narrative
 

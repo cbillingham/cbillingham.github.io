@@ -3,7 +3,6 @@ layout: blog
 title: Blog
 ---
 {% for post in site.posts %}
-  {% if post.tags contains 'Post' %}
     <div class="post-preview">
       <a href="{{ post.url | prepend: site.baseurl }}">
         <h3 class="post-title">            
@@ -18,7 +17,6 @@ title: Blog
       <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.author }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
     </div>
     <hr>
-  {% endif %}
 {% endfor %}
 
 

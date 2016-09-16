@@ -10,15 +10,16 @@ custom_js:
   <div class="row">
     <div class="text-center filter-btn-group">
       <a href type="button" class="filter-btn active" data-filter="*">ALL</a>|
-      <a href type="button" class="filter-btn" data-filter=".lighting">LIGHTING</a>|
       <a href type="button" class="filter-btn" data-filter=".sound">SOUND DESIGN</a>|
+      <a href type="button" class="filter-btn" data-filter=".lighting">LIGHTING</a>|
       <a href type="button" class="filter-btn" data-filter=".directing">DIRECTING</a>
     </div>
   </div>
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
       <div class="row grid">
-        {% for page in site.films %}
+        {% assign sorted_pages = site.films | sort:'sort_weight' %}
+        {% for page in sorted_pages %}
         <div class="col-md-6 col-lg-4 col-xs-12 {{ page.categories | join: ' ' }} film-cont">
           <div class="feature">
             <a href="{{ page.url }}">

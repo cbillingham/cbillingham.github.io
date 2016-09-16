@@ -9,6 +9,7 @@ positions:
 video:
 images:
 layout: film
+sort_weight: 6
 ---
 Narrative
 

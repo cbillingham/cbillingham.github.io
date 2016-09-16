@@ -9,11 +9,12 @@ positions:
 video:
 images:
 layout: film
+sort_weight: 7
 ---
 Narrative
 
 **Director:** Sarah Husein  
-**Composer:**  
+**Composer:** Max Kelm  
 
 <div class="center-block auto-resizable-iframe">
   <div>

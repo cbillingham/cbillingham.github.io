@@ -12,6 +12,7 @@ positions:
   - Cinematographer
 video:
 images:
+sort_weight: 1
 layout: film
 ---
 Documentary

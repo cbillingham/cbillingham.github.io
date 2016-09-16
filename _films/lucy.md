@@ -7,6 +7,7 @@ type: "Narrative, VR"
 positions:
   - Sound Designer
 layout: film
+sort_weight: 5
 ---
 Narrative, Virtual Reality
 

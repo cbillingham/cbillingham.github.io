@@ -7,6 +7,7 @@ type: "Narrative, Animation"
 positions:
   - Sound Designer
 layout: film
+sort_weight: 2
 ---
 Narrative, Animation
 
