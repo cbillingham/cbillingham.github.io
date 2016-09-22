@@ -1,6 +1,6 @@
 ---
 title: Grapevine
-header-img: test.png
+header-img: grapevine.jpg
 dest-url: github.com/lmucs/grapevine
 categories:
   - web-app

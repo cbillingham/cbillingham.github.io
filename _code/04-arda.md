@@ -1,6 +1,6 @@
 ---
 title: Arda
-header-img: test.png
+header-img: arda.jpg
 dest-url: cbillingham.github.io/arda
 categories:
   - operating-system

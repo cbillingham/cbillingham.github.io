@@ -2,21 +2,30 @@
 layout: blog
 title: Blog
 ---
-{% for post in site.posts %}
-    <div class="post-preview">
+
+{% for post in site.posts %}  
+  <div class="row">
+    <div class="col-sm-2">
+      <a href="{{ post.url | prepend: site.baseurl }}">
+        <div class="center-block feature-img-cont thumb">
+          <img class="img feature-img" src="/images/thumbnails/{{ post.thumbnail }}">
+        </div>
+      <a>
+    </div>
+    <div class="col-sm-10 post-preview">
       <a href="{{ post.url | prepend: site.baseurl }}">
         <h3 class="post-title">            
           {{ post.title }}
         </h3>
         {% if post.subtitle %}
-        <h4 class="post-subtitle">
+        <p class="post-subtitle">
           {{ post.subtitle }}
-        </h4>
+        </p>
         {% endif %}
       </a>
       <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.author }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
     </div>
-    <hr>
+  </div>
+  <hr>
 {% endfor %}
-
 

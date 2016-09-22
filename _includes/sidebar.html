@@ -16,12 +16,12 @@
       {%for post in site.posts %}
         <ul class="archive-sidebar">
         {% unless post.next %}
-          <li><a href="/archive#{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</a></li>
+          <li><a href="/archive/#{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</a></li>
         {% else %}
           {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
           {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
             {% if year != nyear %}
-            <li><a href="/archive#{{ nyear }}">{{ nyear }}</a></li>
+            <li><a href="/archive/#{{ nyear }}">{{ nyear }}</a></li>
             {% endif %}
         {% endunless %}
         {% endfor %}

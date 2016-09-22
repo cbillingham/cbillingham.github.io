@@ -1,6 +1,6 @@
 ---
 title: Looking Glass
-header-img: test.png
+header-img: looking-glass.jpg
 dest-url: cbillingham.github.io/looking-glass
 categories:
   - maya

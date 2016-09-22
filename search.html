@@ -1,5 +1,35 @@
 ---
 title: Search
 layout: default
+custom_js:
+- lunr.min
+- search
 ---
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <form class="form" action="/search" method="get">
+        <div class="form-group">
+          <div class="col-xs-10">
+            <input type="text" id="search-box" name="query" class="form-control" placeholder="Search">
+          </div>
+          <div class="col-xs-2">
+            <button id="search-page-button" type="submit" value="search" class="btn btn-default"><i class="fa fa-search"></i></button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="text-center">
+      <h2 class="headers">Search results for: '<span id="search-results-header"></span>'</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <ul class="list-unstyled" id="search-results"></ul>
+    </div>
+  </div>
+</div>
 

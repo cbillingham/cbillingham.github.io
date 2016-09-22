@@ -1,6 +1,6 @@
 ---
 title: Roo
-header-img: test.png
+header-img: roo.jpg
 dest-url: cbillingham.github.io/roo
 categories:
   - programming-language
