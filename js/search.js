@@ -10,7 +10,7 @@ $(document).ready(function() {
         var item = data[results[i].ref];
         appendString += '<li class="post-preview"><a href="' + item.url + '"><h3 class="post-title">' + item.title + '</h3></a>';
         appendString += '<p>' + item.subtitle + '</p>';
-        appendString += '<p class="post-meta">' + item.content.substring(0, 150) + '...</p></li>';
+        appendString += '<p class="post-meta">' + item.content.substring(0, 150) + '...</p></li><hr>';
       }
 
       searchResults.innerHTML = appendString;

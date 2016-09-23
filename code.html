@@ -7,7 +7,7 @@ custom_js: isotope.pkgd.min
 <div class="container">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-      {% for page in site.code | limit: 4 %}
+      {% for page in site.code | limit: 3 %}
       <div class="row feature {{ page.categories | join: ' ' }}">
         <div class="col-md-6{% cycle '', ' col-md-push-6' %}">
           <a href="https://{{ page.dest-url }}">
@@ -20,7 +20,7 @@ custom_js: isotope.pkgd.min
           <h2 class="project-header-code">{{ page.title }}</h2>
           <p class="languages" style="white-space: pre-wrap;">{{ page.languages | join: '  |  '}}</pre></p>
           {{ page.output }}
-          <p><a href="https://{{ page.dest-url }}">Read More...</a></p>
+          <p><a href="https://{{ page.dest-url }}">Learn More...</a></p>
         </div>
       </div>
       <hr>

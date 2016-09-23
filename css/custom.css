@@ -16,6 +16,22 @@ h6 {
   color: #766f6f;
 }
 
+.post-heading .post-title {
+  font-size: 24px;
+}
+
+#search-header {
+  font-size: 18px;
+}
+
+.post-heading .post-subtitle {
+  font-size: 16px;
+}
+
+.post-heading {
+  margin-top: 28px;
+}
+
 .post-preview a:hover .post-title, .post-preview a:hover p {
   color: #3973ac;
 }
@@ -30,11 +46,18 @@ h6 {
 
 .post-meta {
   font-size: 12px;
-  color: #c1bdbd;
+  color: #a8a3a3;
 }
 
 .post-subtitle {
   color: #766f6f;
+}
+
+.post-image {
+  padding: 20px 25px 20px 25px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
 }
 
 #sidebar {
@@ -285,6 +308,15 @@ span.film-type {
 }
 
 @media only screen and (min-width:768px){
+  .post-heading .post-title {
+    font-size: 30px;
+  }
+  #search-header {
+    font-size: 30px;
+  }
+  .post-heading .post-subtitle {
+    font-size: 18px;
+  }
   .content {min-height: 70%;}
   .vbottom {margin-bottom: 0px;}
   .photo {max-height: 210px;}
