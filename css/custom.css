@@ -16,6 +16,11 @@ h6 {
   color: #766f6f;
 }
 
+.recent-posts {
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+
 .post-heading .post-title {
   font-size: 24px;
 }
