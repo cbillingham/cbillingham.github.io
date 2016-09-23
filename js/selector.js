@@ -4,7 +4,7 @@ $(window).load(function() {
     // options
   });
   // filter items on button click
-  $('.filter-btn-group').on( 'click', 'a', function() {
+  $('.filter-btn-group').on( 'click', 'a', function(event) {
     event.preventDefault();
     var filterValue = $(this).attr('data-filter');
     $grid.isotope({ filter: filterValue });
