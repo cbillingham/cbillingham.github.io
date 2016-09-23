@@ -7,7 +7,7 @@ description: >
   enjoys playing with light and sound, working through problems,
   and pressing a fresh mug of coffee.
 baseurl: ""
-url: http://www.cameronbillingham.com
+url: https://www.cameronbillingham.com
 
 exclude: 
   - README.md
