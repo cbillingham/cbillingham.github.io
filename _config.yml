@@ -27,5 +27,5 @@ collections:
     output: false
 
 # Build settings
-highlighter: pygments
+highlighter: rouge
 permalink: pretty
