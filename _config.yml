@@ -26,6 +26,9 @@ collections:
   code:
     output: false
 
+# Google services
+google_analytics: UA-85347507-1
+
 # Build settings
 highlighter: rouge
 permalink: pretty
