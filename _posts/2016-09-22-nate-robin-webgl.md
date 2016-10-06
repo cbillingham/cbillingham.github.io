@@ -12,7 +12,7 @@ thumbnail: "nate-robin.jpg"
 
 ![light material tutorial](/images/posts/nate-robin/lightmaterial.jpg){: .post-image }
 
-In a discussion with my graphics professor about the learning more graphics programming, I remember he 
+In a discussion with my graphics professor about learning more graphics programming, I remember he 
 challenged me to take a look at porting Nate Robin's famous OpenGL tutors to WebGL so they could 
 have an easily accessible, permanent place on the web. The tutors teach core graphics concepts in an intuitive, 
 visual way. The results would be two-fold:
@@ -23,7 +23,7 @@ visual way. The results would be two-fold:
 
 Our undergraduate computer graphics class was taught in WebGL and while many of the foundational concepts 
 are the same, the world of computer graphics is still dominated by OpenGL and C/C++. 
-Therefore, in order to improve my knowledge and programming skills, I am going to start woring on projects in OpenGL and C++. 
+Therefore, in order to improve my knowledge and programming skills, I am going to start working on projects in OpenGL and C++. 
 Starting this month, I will be taking a C++ graphics class online as a introduction. Nate Robin's suddenly 
 popped back into my head and I thought it would be a great first project to get familiar with OpenGL.
 
@@ -34,7 +34,7 @@ And after compiling without any problems I can finally see why these are so awes
 
 There are 7 tutors total. Each teaches a different concept in graphics through visual renders and easy 
 interactive numbers. I especially think the lightposition and projection tutors are extremely helpful. 
-I found the idea of camera frustrum, orthographic vs. perspective projection a difficult theory to grasp. 
+I found the idea of camera frustum, orthographic vs. perspective projection a difficult theory to grasp when I started. 
 And it especially helps to have an interactive visual reference.
 
 ![Projection](/images/posts/nate-robin/projection.gif){: .post-image }
