@@ -149,8 +149,24 @@ h6 {
   text-decoration: none!important;
 }
 
-.film-info a:hover .project-header-film, .film-info a:hover p {
+.code-info a:hover {
+  text-decoration: none!important;
+}
+
+.code-info a:hover .code-exp-title, .code-info a:hover p {
   color: #3973ac;
+}
+
+.code-exp-title {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.code-exp-desc {
+  margin-top: 0px;
+  font-size: 11px;
+  color: #766f6f;
 }
 
 .languages {
@@ -187,6 +203,15 @@ h6 {
   -webkit-filter: blur(0px); 
   -moz-filter: blur(0px); 
   -ms-filter: blur(0px);
+}
+
+span.code-type {
+  display: none;
+  float: right;
+  padding: 5px 0 0 10px;
+  color: #a8a3a3;
+  font-size: 12px;
+  font-style: normal;
 }
 
 span.film-type {
@@ -313,8 +338,14 @@ span.film-type {
 }
 
 @media only screen and (min-width:768px){
+  .code-exp-desc {
+    font-size: 13px;
+  }
   .post-heading .post-title {
     font-size: 30px;
+  }
+  span.code-type {
+    display: inline;
   }
   #search-header {
     font-size: 30px;
