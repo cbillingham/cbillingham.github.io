@@ -16,7 +16,7 @@ exclude:
   - website.sublime-project
   - website.sublime-workspace
 
-gems:
+plugins:
   - jekyll-seo-tag
   - jekyll-feed
 

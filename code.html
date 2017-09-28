@@ -7,7 +7,7 @@ custom_js: isotope.pkgd.min
 <div class="container">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-      {% for page in site.code | limit: 3 %}
+      {% for page in site.code limit: 3 %}
       <div class="row feature {{ page.categories | join: ' ' }}">
         <div class="col-md-6{% cycle '', ' col-md-push-6' %}">
           <a href="https://{{ page.dest-url }}">
@@ -39,7 +39,7 @@ custom_js: isotope.pkgd.min
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
       <div class="row">
-        {% for page in site.code | offset: 3 %}
+        {% for page in site.code offset: 3 %}
         <div class="col-xs-6 col-md-4 film-cont">
           <div class="feature">
             <a href="https://{{ page.dest-url }}">
