@@ -395,15 +395,12 @@ ul.social-buttons {
 }
 
 ul.social-buttons li a {
-  display: block;
   width: 37px;
   height: 37px;
-  border-radius: 15%;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 37px;
   outline: 0;
-  color: #fff;
-  background-color: #fc8682;
+  color: #fc8682;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   transition: all .3s;
@@ -412,7 +409,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-  background-color: #fa3f38;
+  color: #fa3f38;
 }
 
 :target:before {
