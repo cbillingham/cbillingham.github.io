@@ -439,3 +439,7 @@ footer .footer-col {
 .blog {
   min-height: 450px;
 }
+
+#form-phone {
+  display: None !important;
+}

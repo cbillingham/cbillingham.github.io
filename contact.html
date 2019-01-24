@@ -17,8 +17,7 @@ custom_js: contact
       <p>Email: <a href="mailto:cameronjbillingham@gmail.com">cameronjbillingham@gmail.com</a></p>
     </div>
     <div class="col-md-8 col-md-pull-4">
-      <form class="form-horizontal" action="https://getsimpleform.com/messages?form_api_token=e6237707ba0b42fc6ffdbd7a3517d74c" method="post">
-        <input type="hidden" name="redirect_to" value="{{site.url}}/contact/#thank-you">
+      <form class="form-horizontal" id="contact-form" action="{{site.url}}/contact/#thank-you">
         <!-- all your input fields here.... -->
         <div class="form-group">
           <label class="control-label col-sm-2" for="email">Name:</label>
@@ -30,6 +29,7 @@ custom_js: contact
           <label class="control-label col-sm-2" for="email">Email:</label>
           <div class="col-sm-6">
             <input type="text" name="email" class="form-control" placeholder="Your email">
+            <input id="form-phone" type="text" name="phone" class="form-control" placeholder="Your phone" tabindex="-1" autocomplete="false">
           </div>
         </div>
         <div class="form-group">
