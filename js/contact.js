@@ -5,7 +5,6 @@ $(window).load(function() {
 
   function sendData() {
     $.post("https://getsimpleform.com/messages?form_api_token=e6237707ba0b42fc6ffdbd7a3517d74c", form.serialize(), function(data) {
-      console.log(data);
       return;
     });
   }
